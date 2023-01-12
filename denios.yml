@@ -5,8 +5,8 @@
 # this notice are preserved. This file is offered as-is, without any warranty.
 
 include:
-  - https://raw.githubusercontent.com/deniosm/documentation/master/salsa-ci.yml
-  - https://raw.githubusercontent.com/deniosm/documentation/master/pipeline-jobs.yml
+  - https://raw.githubusercontent.com/deniosm/documentation/master/docs/salsa-ci.yml
+  - https://raw.githubusercontent.com/deniosm/documentation/master/docs/pipeline-jobs.yml
   - https://raw.githubusercontent.com/deniosm/documentation/master/denios.yml
 
 
