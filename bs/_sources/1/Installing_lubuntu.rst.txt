@@ -1,0 +1,13 @@
+******************************
+Chapter 1 Installing Denios-OS
+******************************
+
+This chapter shows you how to download and install Denios-OS on your computer.
+
+.. toctree::
+   :maxdepth: 2
+   :titlesonly:
+
+   1.1/retrieving_the_image
+   1.2/booting_the_image
+   1.3/installation

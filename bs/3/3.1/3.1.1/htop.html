@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Chapter 3.1.1 htop &mdash; Denios-OS Manual 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Chapter 3.1.2 QTerminal" href="../3.1.2/qterminal.html" />
+    <link rel="prev" title="Chapter 3.1 System Tools" href="../System_Tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Denios-OS Manual
+          
+
+          
+            
+            <img src="../../../_static/manual64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../2/Applications.html">Chapter 2 Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../System_Tools_and_Preferences.html">Chapter 3 System Tools and Preferences</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../System_Tools.html">Chapter 3.1 System Tools</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 3.1.1 htop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.2/qterminal.html">Chapter 3.1.2 QTerminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.3/startup-disk-creator.html">Chapter 3.1.3 Startup Disk Creator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.4/nm-tray.html">Chapter 3.1.4 nm-tray</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.5/qps.html">Chapter 3.1.5 qps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.6/kde_partitionmanager.html">Chapter 3.1.6 KDE Partition Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.7/lxqt-sudo.html">Chapter 3.1.7 LXQt sudo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.8/sddm_configuration.html">Chapter 3.1.8 SDDM configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.2/Preferences.html">Chapter 3.2 Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../4/Installing_Updating_and_Removing_Software.html">Chapter 4 Installing, Updating, and Removing Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../5/Panel_Desktop_and_Runner.html">Chapter 5 Panel, Desktop, and Runner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../A/tips_and_tricks.html">Appendix A Tips and Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../B/Contributing.html">Appendix B Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../C/command_line.html">Appendix C Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../D/upgrading.html">Appendix D Upgrading from Previous Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../E/live_session.html">Appendix E Live Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../F/keyboard_shortcuts.html">Appendix F Hotkeys Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../G/AdvancedNetworking.html">Appendix G Advanced Networking</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Denios-OS Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../System_Tools_and_Preferences.html">Chapter 3 System Tools and Preferences</a> &raquo;</li>
+        
+          <li><a href="../System_Tools.html">Chapter 3.1 System Tools</a> &raquo;</li>
+        
+      <li>Chapter 3.1.1 htop</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/3/3.1/3.1.1/htop.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="chapter-3-1-1-htop">
+<h1>Chapter 3.1.1 htop<a class="headerlink" href="#chapter-3-1-1-htop" title="Permalink to this heading">¶</a></h1>
+<p>htop is an ncurses text interface task manager that can be controlled by the keyboard. htop also closes unresponsive programs by killing the process.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
+<p>To view how much RAM is being used on your system is under <span class="guilabel">Mem</span> and then a [ number based on how many Gigabytes of memory. The <span class="guilabel">Swp</span> line lists how much swap is used. The numbers going down with a bar with a percentage next to them display CPU usage on each of your CPU cores.</p>
+<p>To see how many process are running on your system see the <span class="guilabel">Tasks</span> row. <span class="guilabel">Load average</span> shows your system load over the past one five and fifteen minute is why there are three numbers see <a class="reference external" href="https://en.wikipedia.org/wiki/Load_(computing)">Wikipedia load (computing)</a> for more information. <span class="guilabel">Uptime</span> shows how long your computer has been booted.</p>
+<p>After the bottom there is a green bar that says <span class="guilabel">PID</span> for the Process ID of a user, The user the process responds to, <span class="guilabel">RES</span> is how much RAM the process is currently using. <span class="guilabel">CPU%</span> shows how much as a percent of CPU time the process is using, <span class="guilabel">MEM%</span> is a percent of the RAM your process is using. <span class="guilabel">Time</span> shows how long the process has been running. <span class="guilabel">Command</span> shows the command line command of the process. To view any cut off part of the <span class="guilabel">Command</span> field press the <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Right</kbd> <kbd class="kbd docutils literal notranslate">Arrow</kbd></kbd> to view the cut off area of the window. To move your window back to where it was press  the <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Left</kbd> <kbd class="kbd docutils literal notranslate">Arrow</kbd></kbd> key.</p>
+<p>To select the process below the currently selected one press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Down</kbd> <kbd class="kbd docutils literal notranslate">Arrow</kbd></kbd> to select the process below. To select the process above the currently selected one press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Up</kbd> <kbd class="kbd docutils literal notranslate">Arrow</kbd></kbd> to select the process above. To select the next group of processes on your screen press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Page</kbd> <kbd class="kbd docutils literal notranslate">Down</kbd></kbd> or move the scrollwheel on the mouse down. To select the previous group of process on your screen press <kbd class="kbd docutils literal notranslate">Page up</kbd> or move the mousewheel up. To choose the last process on your system press the <kbd class="kbd docutils literal notranslate">End</kbd> key. To choose the first process press the <kbd class="kbd docutils literal notranslate">Home</kbd> key.</p>
+<img alt="../../../_images/htop.png" src="../../../_images/htop.png" />
+<p>You can press <kbd class="kbd docutils literal notranslate">F1</kbd> or <kbd class="kbd docutils literal notranslate">?</kbd> to bring up a help dialog on htop. Pressing <kbd class="kbd docutils literal notranslate">F3</kbd> or <kbd class="kbd docutils literal notranslate">/</kbd> lets you search for a particular process. Pressing <kbd class="kbd docutils literal notranslate">F4</kbd> makes it so you can only see processes matching a certain pattern. To get out of the view of your search for a pattern press the <kbd class="kbd docutils literal notranslate">Escape</kbd> key.  To reverse sort order press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">I</kbd></kbd>. Pressing <kbd class="kbd docutils literal notranslate">F5</kbd> is what you press to view the processes in a tree. To get back to the default view press <kbd class="kbd docutils literal notranslate">F5</kbd> again. Pressing <kbd class="kbd docutils literal notranslate">F9</kbd> lets you kill a process with different signals to send to the process and 15 will terminate the process while 9 will Kill it. Lastly pressing <kbd class="kbd docutils literal notranslate">F10</kbd> or <kbd class="kbd docutils literal notranslate">q</kbd> will quit htop and return you to a terminal.</p>
+<img alt="../../../_images/htop-filter.png" src="../../../_images/htop-filter.png" />
+<p>To change how your process are sorted press <kbd class="kbd docutils literal notranslate">F6</kbd> which will bring up your own menu to sort by by <span class="guilabel">PID</span>, <span class="guilabel">USER</span>, <span class="guilabel">Priority</span>, <span class="guilabel">NICE</span>, <span class="guilabel">M_Size</span>, <span class="guilabel">M_Resident</span>, <span class="guilabel">M_Share</span>, <span class="guilabel">State</span>, <span class="guilabel">Percent_CPU</span>, <span class="guilabel">Percent_Mem</span>, <span class="guilabel">Time</span>, or <span class="guilabel">Command</span>.  To select a menu item press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
+</section>
+<section id="customizing">
+<h2>Customizing<a class="headerlink" href="#customizing" title="Permalink to this heading">¶</a></h2>
+<p><kbd class="kbd docutils literal notranslate">F2</kbd> brings about a customizable settings on htop. The <span class="guilabel">Meters</span> options brings up meters like CPU average. To see what kind of meter you have it will be shown in brackets. To move a meter press <kbd class="kbd docutils literal notranslate">Enter</kbd> and press the arrow keys to move in the direction of the meter you want to select. To save a meter in that place press <kbd class="kbd docutils literal notranslate">Enter</kbd> again. To delete a meter press <kbd class="kbd docutils literal notranslate">Delete</kbd>. To add new meter move all the way to the right by pressing the <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Right</kbd> <kbd class="kbd docutils literal notranslate">arrow</kbd></kbd> under <span class="guilabel">Available meters</span>. To add a meter press <kbd class="kbd docutils literal notranslate">Enter</kbd> and to select which one press the arrow keys.</p>
+<p>The <span class="guilabel">Display Options</span> has option for different ways to display in htop. To toggle an option on press <kbd class="kbd docutils literal notranslate">Spacebar</kbd>. The <span class="guilabel">Colors</span> tab brings up different color schemes for htop. To select a different color scheme press the <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Up</kbd> <kbd class="kbd docutils literal notranslate">arrow</kbd></kbd> or <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Down</kbd> <kbd class="kbd docutils literal notranslate">arrow</kbd></kbd> keys. To select a new color scheme press the <kbd class="kbd docutils literal notranslate">Spacebar</kbd> key.</p>
+<img alt="../../../_images/htop-setup.png" src="../../../_images/htop-setup.png" />
+<p>To change what columns end up showing select <span class="guilabel">Columns</span> on the setup menu. The column <span class="guilabel">Active Columns</span> shows what columns you will have on htop with the top being the leftmost column in htop and the bottom being the rightmost. To select a different column press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Up</kbd> <kbd class="kbd docutils literal notranslate">arrow</kbd></kbd> or <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Down</kbd> <kbd class="kbd docutils literal notranslate">arrow</kbd></kbd>. To move a column up in the list press <kbd class="kbd docutils literal notranslate">F7</kbd>. To move a column down press <kbd class="kbd docutils literal notranslate">F8</kbd>. To remove a column press <kbd class="kbd docutils literal notranslate">F9</kbd>. To see what other columns there is the column <span class="guilabel">Available Columns</span>. To add a column when having <span class="guilabel">Available Columns</span> and select the column you want and press <kbd class="kbd docutils literal notranslate">F5</kbd>.</p>
+</section>
+<section id="version">
+<h2>Version<a class="headerlink" href="#version" title="Permalink to this heading">¶</a></h2>
+<p>Denios-OS ships with version 3.0.3 of htop.</p>
+</section>
+<section id="how-to-launch">
+<h2>How to launch<a class="headerlink" href="#how-to-launch" title="Permalink to this heading">¶</a></h2>
+<p>To launch htop from the menu <span class="menuselection">System Tools ‣ Htop</span> with the Icon that looks like the green H made out of text or run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">htop</span>
+</pre></div>
+</div>
+<p>from the command line.</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../3.1.2/qterminal.html" class="btn btn-neutral float-right" title="Chapter 3.1.2 QTerminal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../System_Tools.html" class="btn btn-neutral float-left" title="Chapter 3.1 System Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022-2023, Denios-OS Gnu/Linux. This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

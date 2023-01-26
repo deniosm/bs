@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Chapter 3.1.8 SDDM configuration &mdash; Denios-OS Manual 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Chapter 3.2 Preferences" href="../../3.2/Preferences.html" />
+    <link rel="prev" title="Chapter 3.1.7 LXQt sudo" href="../3.1.7/lxqt-sudo.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Denios-OS Manual
+          
+
+          
+            
+            <img src="../../../_static/manual64.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../2/Applications.html">Chapter 2 Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../System_Tools_and_Preferences.html">Chapter 3 System Tools and Preferences</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../System_Tools.html">Chapter 3.1 System Tools</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../3.1.1/htop.html">Chapter 3.1.1 htop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.2/qterminal.html">Chapter 3.1.2 QTerminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.3/startup-disk-creator.html">Chapter 3.1.3 Startup Disk Creator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.4/nm-tray.html">Chapter 3.1.4 nm-tray</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.5/qps.html">Chapter 3.1.5 qps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.6/kde_partitionmanager.html">Chapter 3.1.6 KDE Partition Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3.1.7/lxqt-sudo.html">Chapter 3.1.7 LXQt sudo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 3.1.8 SDDM configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../3.2/Preferences.html">Chapter 3.2 Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../4/Installing_Updating_and_Removing_Software.html">Chapter 4 Installing, Updating, and Removing Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../5/Panel_Desktop_and_Runner.html">Chapter 5 Panel, Desktop, and Runner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../A/tips_and_tricks.html">Appendix A Tips and Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../B/Contributing.html">Appendix B Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../C/command_line.html">Appendix C Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../D/upgrading.html">Appendix D Upgrading from Previous Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../E/live_session.html">Appendix E Live Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../F/keyboard_shortcuts.html">Appendix F Hotkeys Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../G/AdvancedNetworking.html">Appendix G Advanced Networking</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Denios-OS Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../System_Tools_and_Preferences.html">Chapter 3 System Tools and Preferences</a> &raquo;</li>
+        
+          <li><a href="../System_Tools.html">Chapter 3.1 System Tools</a> &raquo;</li>
+        
+      <li>Chapter 3.1.8 SDDM configuration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/3/3.1/3.1.8/sddm_configuration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="chapter-3-1-8-sddm-configuration">
+<h1>Chapter 3.1.8 SDDM configuration<a class="headerlink" href="#chapter-3-1-8-sddm-configuration" title="Permalink to this heading">¶</a></h1>
+<p>SDDM is the default display manager that shows up when you first log in to Denios-OS or logout or choose to another session. There is no graphical application to do this currently.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">¶</a></h2>
+<p>If you have autologin enabled and want to disable autologin open the file /etc/sddm.conf as root. To do this run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lxqt</span><span class="o">-</span><span class="n">sudo</span> <span class="n">featherpad</span>
+</pre></div>
+</div>
+<p>and open /etc/sddm.conf. Then to disable autologin remove the entire line [Autologin].</p>
+<p>To test your SDDM configuration and make sure it is a valid one so you can log in run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sddm</span><span class="o">-</span><span class="n">greeter</span> <span class="o">--</span><span class="n">test</span><span class="o">-</span><span class="n">mode</span>
+</pre></div>
+</div>
+<p>To change the picture for your user when you login simply copy the file you want as your user picture to in your home folder with the name .face.icon .</p>
+<p>If you want to install other themes for sddm in Muon or from the command line search for packages that start their name with sddm-theme. The theme will be stored in /usr/share/sddm/theme/. To test and see what this new theme looks like run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sddm</span><span class="o">-</span><span class="n">greeter</span> <span class="o">--</span><span class="n">test</span><span class="o">-</span><span class="n">mode</span> <span class="o">--</span><span class="n">theme</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">theme</span>
+</pre></div>
+</div>
+<p>from the command line. To set this new theme as your default theme for sddm see alternatives in chapter 3.2.17 and update the sddm-ubuntu-theme group of alternatives. From the command line to switch this setting you can run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">alternatives</span>  <span class="o">--</span><span class="n">config</span> <span class="n">sddm</span><span class="o">-</span><span class="n">ubuntu</span><span class="o">-</span><span class="n">theme</span>
+</pre></div>
+</div>
+<p>from the command line. To add a new background for a particular theme copy that image into the /usr/share/sddm/theme/ folder as root. Then in your theme edit the file theme.conf as root and change the line background= with the path to your image. To edit theme.conf as root run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">sddm</span><span class="o">/</span><span class="n">themes</span><span class="o">/</span><span class="n">denios</span><span class="o">-</span><span class="n">os</span><span class="o">/</span><span class="n">theme</span><span class="o">.</span><span class="n">conf</span>
+</pre></div>
+</div>
+<p>However to copy the image file since this is not in your home system copying and saving a background to this folder will require root permissions as well.</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../3.2/Preferences.html" class="btn btn-neutral float-right" title="Chapter 3.2 Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../3.1.7/lxqt-sudo.html" class="btn btn-neutral float-left" title="Chapter 3.1.7 LXQt sudo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022-2023, Denios-OS Gnu/Linux. This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

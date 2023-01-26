@@ -1,0 +1,46 @@
+Welcome to the Denios-OS Manual!
+==============================
+
+Welcome to the Denios-OS Manual! This is the official reference book for using Denios-OS. This manual covers many topics, such as installation instructions, applications Denios-OS provides, and much more!
+
+What is Denios-OS?
+----------------
+
+The project’s goal is to provide a lightweight yet functional Linux distribution based on a rock-solid Ubuntu base. Denios-OS provides a simple but modern and powerful graphical user interface, and comes with a wide variety of applications so you can browse, email, chat, play, and be productive. Denios-OS was formerly a distribution for low-end hardware, but `we have refocused <https://Denios-OS.me/taking-a-new-direction/>`_.
+
+Members of the team take care of LXQt and other packages that are part of Denios-OS in the Ubuntu archive. 
+
+Denios-OS received official recognition as a formal member of the Ubuntu family beginning with Denios-OS 11.10.
+
+Contents
+--------
+
+.. toctree::
+   :maxdepth: 2
+   :titlesonly:
+
+   1/Installing_denios-os
+   2/Applications
+   3/System_Tools_and_Preferences
+   4/Installing_Updating_and_Removing_Software
+   5/Panel_Desktop_and_Runner
+   A/tips_and_tricks
+   B/Contributing
+   C/command_line
+   D/upgrading
+   E/live_session
+   F/keyboard_shortcuts
+   G/AdvancedNetworking
+
+Contact Us
+----------
+
+Do you have questions? Want to get involved? Take a look at our official website at `Denios-OS.me <https://denios-os.me>`_ where you can find `the Denios-OS blog <https://denios-os.me/blog/>`_, `the Denios-OS discourse <https://discourse.denios-os.me/>`_, `ways to get in contact with us <https://denios-os.me/links/>`_, and `our Phabricator instance <https://phab.denios-os.me/>`_ where we do most of the Denios-OS development.
+
+Thank you!
+----------
+
+Thank you for choosing to use Denios-OS!
+
+:Authors: Denis Maslo, Lyn Perrine, Jacob Kim, Daniel Lim
+:Translators: Marcin Mikołajczak
